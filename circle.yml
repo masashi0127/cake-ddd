@@ -9,7 +9,7 @@ dependencies:
     - docker info
     - docker build -t masashi0127/cake-ddd .
   post:
-    - docker run -d masashi0127/cake-ddd
+    - docker run -d masashi0127/cake-ddd /bin/bash
 
 test:
   override:
