@@ -5,7 +5,7 @@ machine:
     - docker
 
 dependencies:
-  pre
+  pre:
     - pwd
     - ls -al
   override:
