@@ -9,7 +9,7 @@ dependencies:
     - pwd
     - ls -al
   override:
-    - docker build -t masashi0127/cake-ddd .
+    - docker build --rm=false -t masashi0127/cake-ddd .
 
 test:
   override:
