@@ -8,3 +8,9 @@ dependencies:
   override:
     - docker info
     - docker build -t masashi0127/cake-ddd .
+  post:
+    - docker run -v ./masashi0127/cake-ddd.git:/var/www/html
+
+test:
+  override:
+    - echo 'ok'
