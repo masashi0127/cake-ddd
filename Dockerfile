@@ -1,3 +1,4 @@
 FROM centos:6.6
-RUN cd /var/www/html && \
+RUN makdir /var/www/html && \
+  cd /var/www/html && \
   pwd
