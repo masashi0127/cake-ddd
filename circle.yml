@@ -1,0 +1,21 @@
+machine:
+  pre:
+    - echo machine_pre
+  timezone:
+    Asia/Tokyo
+  php:
+    version: 7.0.0RC7
+  post:
+    - echo machine_post
+
+dependencies:
+  pre:
+    - echo dependencies_pre
+  post:
+    - echo dependencies_post
+
+test:
+  pre:
+    - echo test_pre
+  post:
+    - echo test_post
