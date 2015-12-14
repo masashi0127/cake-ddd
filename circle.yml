@@ -10,9 +10,8 @@ dependencies:
     - ls -al
   override:
     - docker build -t masashi0127/cake-ddd .
-  # post:
-  #   - docker run -m 1024m -d masashi0127/cake-ddd -v /home/ubuntu/cake-ddd:/var/www/html /bin/bash
-  #   - docker exec -d masashi0127/cake-ddd ls -al /var/www/html
+  post:
+    - docker run -m 1024m -d masashi0127/cake-ddd -v /home/ubuntu/cake-ddd:/var/www/html /bin/bash
 
 test:
   override:
