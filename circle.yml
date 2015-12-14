@@ -5,6 +5,9 @@ machine:
     - docker
 
 dependencies:
+  pre
+    - pwd
+    - ls -al
   override:
     - docker info
     - docker build -t masashi0127/cake-ddd .
