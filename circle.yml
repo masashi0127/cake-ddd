@@ -13,5 +13,4 @@ dependencies:
 
 test:
   override:
-    - docker run -m 1024m -d masashi0127/cake-ddd -v /home/ubuntu/cake-ddd:/var/www/html /bin/bash; sleep 10
-    - cat /etc/issue
+    - docker run -m 1024m -d masashi0127/cake-ddd -v /home/ubuntu/cake-ddd:/var/www/html /bin/bash; cat /etc/issue
