@@ -12,7 +12,7 @@ dependencies:
     - docker info
     - docker build -t masashi0127/cake-ddd .
   post:
-    - docker run -m 1024m -d masashi0127/cake-ddd /bin/bash
+    - docker run -m 1024m -d masashi0127/cake-ddd -v /home/ubuntu/cake-ddd:/var/www/html /bin/bash
 
 test:
   override:
