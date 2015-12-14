@@ -13,4 +13,4 @@ dependencies:
 
 test:
   override:
-    - docker run -ti masashi0127/cake-ddd "ls /var"
+    - docker run -ti masashi0127/cake-ddd echo test
