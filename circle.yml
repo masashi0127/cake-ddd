@@ -7,7 +7,5 @@ machine:
 dependencies:
   override:
     - docker info
-
-test:
-  override:
-    - echo nothing
+    - docker build -t masashi0127/cake-ddd
+    
