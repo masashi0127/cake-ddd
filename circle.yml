@@ -13,4 +13,4 @@ dependencies:
 
 test:
   override:
-    - docker run -ti masashi0127/cake-ddd /bin/bash -c "ls -al /var/www/html"
+    - docker run -ti masashi0127/cake-ddd -v /home/ubuntu/cake-ddd:/var/www/html /bin/bash -c "ls -al /var/www/html"
