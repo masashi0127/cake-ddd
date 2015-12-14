@@ -1,5 +1,3 @@
-FROM centos:centos6
-RUN mkdir -p /var/www/html && \
-  cd /var/www/html && \
-  pwd
+FROM centos:6.6
+RUN mkdir -p /var/www/html
 CMD /bin/bash
