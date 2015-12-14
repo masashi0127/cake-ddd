@@ -13,4 +13,4 @@ dependencies:
 
 test:
   override:
-    - docker run -m 1024m -ti masashi0127/cake-ddd "cat /etc/issue"
+    - docker run -ti masashi0127/cake-ddd "cat /etc/issue"
