@@ -12,4 +12,4 @@ dependencies:
 test:
   override:
     - docker run -v /home/ubuntu/cake-ddd:/var/www/html -ti masashi0127/cake-ddd /bin/bash -c "ls -al /var/www/html"
-    - docker run -v /home/ubuntu/ci-cookbooks:/var/www/ci-cookbooks -ti masashi0127/cake-ddd /bin/bash -c "knife zero chef_client \'name: 127.0.0.1\' -o ci-bookbooks"
+    - docker run -v /home/ubuntu/ci-cookbooks:/var/www/ci-cookbooks -ti masashi0127/cake-ddd /bin/bash -c "knife zero chef_client name: 127.0.0.1 -o ci-bookbooks"
