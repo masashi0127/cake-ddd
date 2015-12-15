@@ -5,13 +5,12 @@ machine:
     - docker
 
 dependencies:
-  override:
-    - docker build --rm=false -t masashi0127/cake-ddd .
+  pre:
     - cd /home/ubuntu
     - pwd
-    - git clone https://github.com/masashi0127/ci-cookbooks.git ci-cookbooks
-    - cd ~
-    - ls -al
+  override:
+    - docker build --rm=false -t masashi0127/cake-ddd .
+    - git clone https://github.com/masashi0127/ci-cookbooks.git /home/ubuntu/ci-cookbooks
 
 test:
   override:
