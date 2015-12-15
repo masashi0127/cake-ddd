@@ -10,7 +10,7 @@ dependencies:
     - cd /home/ubuntu
     - git clone https://github.com/masashi0127/ci-cookbooks.git ci-cookbooks
     - cd ~
-    - pwd
+    - ls -al
 
 test:
   override:
