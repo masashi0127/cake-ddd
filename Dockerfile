@@ -11,7 +11,7 @@ make && \
 make install && \
 gem install chef && \
 gem install knife-zero && \
-git clone git@github.com:masashi0127/ci-cookbooks.git && \
+git clone https://github.com/masashi0127/ci-cookbooks.git && \
 knife zero chef_client 'name: 127.0.0.1' -o ci-bookbooks
 
 mkdir -p /var/www/html
