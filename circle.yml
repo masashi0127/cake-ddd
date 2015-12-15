@@ -9,7 +9,7 @@ dependencies:
     - docker build --rm=false -t masashi0127/cake-ddd .
     - cd /home/ubuntu
     - git clone https://github.com/masashi0127/ci-cookbooks.git ci-cookbooks
-    - ls -al /home/ubuntu
+    - ls -al ~
 
 test:
   override:
