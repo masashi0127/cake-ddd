@@ -1,6 +1,6 @@
 FROM centos:6.6
 
-RUN yum update && \
+RUN yum update -y && \
 yum install -y git vim-enhanced wget gcc zlib-devel openssl-devel && \
 cd ~/ && \
 wget http://cache.ruby-lang.org/pub/ruby/2.2/ruby-2.2.2.tar.gz && \
