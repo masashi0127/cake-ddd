@@ -6,11 +6,10 @@ machine:
 
 dependencies:
   pre:
-    - pwd
-    - ls -al
+    - ls -al ~/.ssh
   override:
     - docker build --rm=false -t masashi0127/cake-ddd .
 
 test:
   override:
-    - docker run -v /home/ubuntu/cake-ddd:/var/www/html -ti masashi0127/cake-ddd /bin/bash -c "ls -al ~/.ssh"
+    - docker run -v /home/ubuntu/cake-ddd:/var/www/html -ti masashi0127/cake-ddd /bin/bash -c "ls -al /var/www/html"
