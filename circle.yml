@@ -5,11 +5,10 @@ machine:
     - docker
 
 dependencies:
-  pre:
-    - ls -al ~/.ssh
   override:
     - docker build --rm=false -t masashi0127/cake-ddd .
 
 test:
   override:
     - docker run -v /home/ubuntu/cake-ddd:/var/www/html -ti masashi0127/cake-ddd /bin/bash -c "ls -al /var/www/html"
+    - docker run -v /home/ubuntu/cake-ddd:/var/www/test -ti masashi0127/cake-ddd /bin/bash -c "ls -al /var/www/test"
