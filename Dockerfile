@@ -1,7 +1,7 @@
 FROM centos:6.6
 
 ADD ci-cookbooks/ /var/www/ci-cookbooks/
-RUN ls -al /var/www
+RUN ls -al /var/www/ci-cookbooks
 
 # RUN yum update -y && \
 # yum install -y git vim-enhanced wget tar gcc zlib-devel openssl-devel && \
