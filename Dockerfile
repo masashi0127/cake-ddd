@@ -14,4 +14,4 @@ make && \
 make install && \
 gem install chef && \
 gem install knife-zero && \
-knife zero chef_client name\t 127.0.0.1 -o ci-bookbooks
+knife zero chef_client name\t 127.0.0.1 -o /var/www/html/ci-bookbooks
