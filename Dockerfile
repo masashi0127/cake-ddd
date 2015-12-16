@@ -1,6 +1,7 @@
 FROM centos:6.6
 
-ADD . /var/www/
+ADD . /var/www/html/
+RUN ls -al /var/www/html
 
 RUN yum update -y && \
 yum install -y git vim-enhanced wget tar gcc zlib-devel openssl-devel && \
