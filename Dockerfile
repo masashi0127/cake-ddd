@@ -10,4 +10,4 @@ cd ruby-2.2.2 && \
 make && \
 make install && \
 gem install chef && \
-gem install knife-zero && \
+gem install knife-zero
