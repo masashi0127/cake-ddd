@@ -1,6 +1,6 @@
 FROM centos:6.6
 
-ADD /home/ubuntu/ci-cookbooks/ /var/www/ci-cookbooks/
+ADD ci-cookbooks/ /var/www/ci-cookbooks/
 RUN ls -al /var/www
 
 # RUN yum update -y && \
