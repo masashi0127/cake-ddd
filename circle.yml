@@ -6,7 +6,7 @@ machine:
 
 dependencies:
   override:
-    - git clone https://github.com/masashi0127/ci-cookbooks.git ci-cookbooks
+    - git clone https://github.com/masashi0127/ansible.git
     - docker build --rm=false -t masashi0127/cake-ddd .
 
 test:
