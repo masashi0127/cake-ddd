@@ -1,4 +1,4 @@
-FROM centos:centos6
+FROM centos:6.6
 
 ADD . /var/www/html/
 
