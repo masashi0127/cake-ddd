@@ -5,7 +5,19 @@ machine:
     - docker
 
 dependencies:
+  cache_directories:
+    - ~/docker_cache
   override:
+    - mkdir -p ~/docker_cache
+    - |
+      if [ -e ~/docker_cache/build.log ]; then
+        cat ~/docker_cache/build.log
+      fi
+    - echo "`date +'%Y-%m-%d %H:%M:%S'` branch=$CIRCLE_BRANCH build_number=$CIRCLE_BUILD_NUM" >> ~/docker_cache/build.log
+    - |
+      if [ -e ~/docker_cache/build.log ]; then
+        cat ~/docker_cache/build.log
+      fi
     - git clone https://github.com/masashi0127/ansible.git
     - docker build --rm=false -t masashi0127/cake-ddd .
 
